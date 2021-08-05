@@ -2,9 +2,13 @@
 Please execute the following code to generate the address trace
 -----------------------------------------------------------------------
 make obj-intel64/addrtrace.so
+
 ../../../pin -t obj-intel64/addrtrace.so -o addr_prog1 -- ./prog1 8  
+
 ../../../pin -t obj-intel64/addrtrace.so -o addr_prog2 -- ./prog2 8
+
 ../../../pin -t obj-intel64/addrtrace.so -o addr_prog3 -- ./prog3 8
+
 ../../../pin -t obj-intel64/addrtrace.so -o addr_prog4 -- ./prog4 8
 
 I assume that all the address traces are present inside Traces folder.
